@@ -13,7 +13,9 @@ from tqdm import trange
 from ldm.models.diffusion.ddim import DDIMSampler
 from ldm.util import instantiate_from_config
 
-CONFIG_PATH = Path(__file__).parent.parent / "configs/stable-diffusion/v1-inference.yaml"
+CONFIG_PATH = (
+    Path(__file__).parent.parent / "configs/stable-diffusion/v1-inference.yaml"
+)
 CKPT_PATH = Path(__file__).parent.parent / "models/ldm/stable-diffusion-v4/sd-v1-4.ckpt"
 
 
